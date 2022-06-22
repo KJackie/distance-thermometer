@@ -10,7 +10,7 @@ def make_rgb_view(arr, detections, win_size, bb_color=(0, 255, 0)):
 
     scale = max(1, win_size[0] // 700)
 
-    arr = cv2.resize(arr, win_size)
+    arr = cv2.resize(arr, win_size) 
 
     h, w = arr.shape[:2]
     scores = detections[:, 2]
